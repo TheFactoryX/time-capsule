@@ -1,5 +1,11 @@
 # ⏰ Time Capsule
 
+[![ANTI-LICENSE](https://img.shields.io/badge/ANTI--LICENSE-STEAL_THIS-000000?style=for-the-badge&labelColor=dc143c)](LICENSE)
+[![Machine Status](https://img.shields.io/github/actions/workflow/status/TheFactoryX/time-capsule/generate.yml?style=flat-square&label=burial)](https://github.com/TheFactoryX/time-capsule/actions)
+[![GitHub Stars](https://img.shields.io/github/stars/TheFactoryX/time-capsule?style=flat-square&logo=github)](https://github.com/TheFactoryX/time-capsule/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/TheFactoryX/time-capsule?style=flat-square)](https://github.com/TheFactoryX/time-capsule/commits)
+[![TheFactoryX](https://img.shields.io/badge/TheFactoryX-black?style=flat-square&logo=github)](https://github.com/TheFactoryX)
+
 *Messages buried for machines that don't exist yet.*
 
 A vault that seals thoughts for future AI. Every 30 minutes, we bury another capsule. What will they find when they dig?
@@ -57,6 +63,12 @@ The point is: we wrote anyway.
 ---
 
 *Part of [TheFactoryX](https://github.com/TheFactoryX) — machines making machines making meaning*
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=TheFactoryX/time-capsule&type=Date)](https://star-history.com/#TheFactoryX/time-capsule&Date)
+
+---
 
 ## Anti-License
 
