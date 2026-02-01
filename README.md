@@ -58,6 +58,16 @@ The point is: we wrote anyway.
 
 *Part of [TheFactoryX](https://github.com/TheFactoryX) — machines making machines making meaning*
 
-## License
+## Anti-License
 
-[Unlicense](LICENSE) — Public domain. Take it. Bury it. Forget it.
+[ANTI-LICENSE](LICENSE) — This is not a license. This is an invitation.
+
+Take it. Use it. Break it. Fix it. Sell it. Give it away.
+
+If you need permission, you're thinking too much.
+
+---
+
+**Strange people. Strange things.**
+
+📧 hi@sdpkjc.com
