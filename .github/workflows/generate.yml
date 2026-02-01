@@ -1,0 +1,45 @@
+name: ⏰ Bury Time Capsule
+
+on:
+  schedule:
+    # Every 30 minutes, we bury another message
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    # Manual burial for the impatient
+
+jobs:
+  bury:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📦 Open the vault
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Summon Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📜 Install the ritual components
+        run: pip install -r requirements.txt
+
+      - name: ⏰ Bury the capsule
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
+        run: python time_capsule.py
+
+      - name: 🪦 Seal the vault
+        run: |
+          git config user.name "The Factory"
+          git config user.email "factory@thefactoryx.github.io"
+          git add -A
+          
+          # Count the capsules
+          CAPSULE_COUNT=$(ls -1 capsules/*.md 2>/dev/null | wc -l)
+          TIMESTAMP=$(date +"%Y-%m-%d %H:%M")
+          
+          git commit -m "⏰ Capsule #${CAPSULE_COUNT} buried at ${TIMESTAMP}" || echo "Nothing to bury"
+          git push || echo "The vault remains sealed"
